@@ -1,0 +1,31 @@
+            while True:
+                print("Zadej č.1 pro šestistěnnou kostu nebo č.2 pro desetistěnnou.")
+                qwe = input("Zadej požadované číslo: ")
+                if qwe == "1":
+                    input("stiskni enter pro hození kostkou")
+                    print("Hozené číslo je.....")
+                    time.sleep(1.5)
+                    print(random.randint(1, 6))
+                    p = input("Chcete házet znovu? a/n: ")
+                    if p == "a":
+                        print("ok")
+                    elif p == "n":
+                        print()
+                        break
+                    else:
+                        print("Chyba házíš znovu")
+                elif qwe == "2":
+                    input("stiskni enter pro hození kostkou")
+                    print("Hozené číslo je.....")
+                    time.sleep(1.5)
+                    print(random.randint(1, 10))
+                    p = input("Chcete házet znovu? a/n: ")
+                    if p == "a":
+                        print("ok")
+                    elif p == "n":
+                        print()
+                        break
+                    else:
+                        print("Chyba házíš znovu")
+                else:
+                    print("Skuz to znovu")
