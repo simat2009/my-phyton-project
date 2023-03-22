@@ -1,0 +1,31 @@
+import time
+
+input("Výtejte v kalkulačce pužívejte znaménka (+ - * /) stiskěte enter pro pokračování...")
+q = 1
+f = 1
+while f == 1:
+    a = float(input("Zadjete prní číslo: "))
+    b = input("Zadejte znaménko: ")
+    c = float(input("Zadjete druhé číslo: "))
+    if b == "+":
+        print(a, b, c, "=", a + c)
+    elif b == "-":
+        print(a, b, c, "=", a - c)
+    elif b == "*":
+        print(a, b, c, "=", a * c)
+    elif b == "/":
+        print(a, b, c, "=", a / c)
+    else:
+        print("špatné znaménko!")
+    while q == 1:
+        x = input("Chcete pokračovat v pužívání kalkulačky? (a / n): ").lower()
+        if x == "a":
+            print()
+            break
+        elif x == "n":
+            q = 0
+            f = 0
+            print("Nashle")
+            time.sleep(1)
+        else:
+            print("Chyba!")
